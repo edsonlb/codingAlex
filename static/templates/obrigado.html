@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="<col-sm-12" style='text-align: center;'>
+			
+			<div class="container">
+			{% if messages %}
+			<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+			{% for message in messages %}
+			<p{% if message.tags == "success" %} class="alert alert-success" {% endif %}>{{ message }}</p>
+			{% endfor %}
+					</div>
+				</div>
+			{% endif %}
+
+
+<h1> Faltam só alguns dados. Por favor, preencha o restante: </h1>
+            <form method="POST" action=""> {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-success" value="Finalizar Pagamento">
+            </form>
+        
+
+
+</div>
+
+
+{% endblock %}

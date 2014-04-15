@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block jumbotron %}
+     <div class="jumbotron">
+      <div class="container">
+       <div class="col-sm-6">
+        <h1>Olá, bem-vindo!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-default btn-lg" role="button">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-sm-6" style="margin: 90px 0px 40px;">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/Kf6va5DyX4Y" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+
+{% block content %}
+<div class="col-sm-3">
+          <h2>Documentação Python.Org</h2>
+          <p><img src='http://www.greenitbrasil.com.br/wp-content/uploads/2012/10/python_logo.jpg' class='img-responsive'>Este site foi desenvolvido em Python e Django. </p>
+          <p><a class="btn btn-default" href="http://www.python.org.br/wiki" role="button">Vesualizar Documentação</a></p>
+        </div>
+        <div class="col-sm-3">
+          <h2>Documentação Django Brasil</h2>
+          <p><img src="http://www.arruda.blog.br/wp-content/uploads/2011/12/django.png" class='img-responsive'>Site desenvolvido em python e Django.</p>
+          <p><a class="btn btn-default" href="http://www.djangobrasil.org/" role="button">Visualizar Documentação</a></p>
+       </div>
+        <div class="col-sm-3">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          
+        </div>
+        <div class="col-sm-3">
+        <h1>PayPal</h1>
+        <p>Teste didádico. Por favor, não clique.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="FU4TTPT5YXXZE">
+<input type="hidden" name="on0" value="Help">
+<select class="form-control" name="os0">
+    <option value="Basic">Basic R$99,00</option>
+    <option value="Basic +">Basic + R$149,00</option>
+    <option value="premium">premium R$199,00</option>
+</select> 
+<input type="hidden" name="currency_code" value="BRL"></br>
+    <input type="submit" class="btn btn-warning btn-block">
+
+</form>
+
+
+</div>
+        
+
+{% endblock %}
