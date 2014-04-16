@@ -47,6 +47,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'signups',
+    'core',
 )
 
 MIDDLEWARE_CLASSES = (
