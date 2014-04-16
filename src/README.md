@@ -1,1 +1,1 @@
-Meu site.
+Exemplo de Integração paypal.
